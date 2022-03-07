@@ -64,9 +64,7 @@ const Main = (props) => {
                 {
                     props.loading && <img src='./images/spin-loader.gif' />
                 }
-                {props.articles.length > 0 &&
-                props.articles.map((article,key) => (
-                <Article key = {key}>
+                <Article>
                     <SharedActor>
                         <a>
                             <img src="/images/user.svg" alt="" />
@@ -118,9 +116,7 @@ const Main = (props) => {
                             <span>Send</span>
                         </button>
                     </SocialActions>
-
                 </Article>
-                ))} 
             </Content>
             <PostModal showModal ={showModal} handleClick={handleClick}>
 
